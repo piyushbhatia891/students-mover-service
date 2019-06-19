@@ -1,0 +1,68 @@
+<div class="page-container">
+  <div class="page-header">
+    <div class="group-title">
+      <div class="back" fxHide="true" fxShow.lt-sm>
+        <i class="fa fa-arrow-left searchIcon" (click)="navigateBack()"></i>
+      </div>
+      <div class="title">
+        <span>Employee List</span>
+      </div>
+    </div>
+    <div class="content">
+      <div class="content-left">
+        <div class="student-first-name">
+          {{ studentDetails.firstname }}
+        </div>
+        <div class="student-last-name">
+          {{ studentDetails.lastname }}
+        </div>
+      </div>
+      <div class="content-right">
+        <div class="address-1">
+          {{ studentDetails.address.line1 }}
+        </div>
+        <div class="address-2">
+          {{ studentDetails.address.line2 }}
+        </div>
+      </div>
+    </div>
+    <ngx-float-button
+      icon="add"
+      class="floating-add-button"
+      fxHide="true"
+      fxShow.lt-sm
+    >
+      <ngx-float-item-button
+        icon="student_add"
+        content="New student"
+      ></ngx-float-item-button>
+    </ngx-float-button>
+  </div>
+
+  <div
+    class="container"
+    fxLayout="row wrap"
+    fxLayout.lt-sm="column"
+    fxLayoutMargin="10px"
+    fxLayoutAlign="center"
+    fxLayoutGap="32px"
+  >
+    <ng-container *ngFor="let student of studentsList">
+      <app-detail-card
+        *ngIf="student.isEditable == false"
+        [student]="student"
+        (clicked)="navigateToDetail($event)"
+        fxFlex="0 1 calc(33.3% - 32px)"
+        fxFlex.lt-md="0 1 calc(50% - 32px)"
+        fxFlex.lt-sm="100%"
+      ></app-detail-card>
+      <app-detail-card-info
+        *ngIf="student.isEditable == true"
+        [student]="studentDetails"
+        fxFlex="0 1 calc(33.3% - 32px)"
+        fxFlex.lt-md="0 1 calc(50% - 32px)"
+        fxFlex.lt-sm="100%"
+      ></app-detail-card-info>
+    </ng-container>
+  </div>
+</div>

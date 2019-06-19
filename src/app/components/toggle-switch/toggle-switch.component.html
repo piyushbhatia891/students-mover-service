@@ -1,0 +1,26 @@
+<div class="toggler">
+  <input
+    type="radio"
+    name="designation"
+    value="driver"
+    (click)="emitSelectedValue('driver')"
+    [(ngModel)]="designation"
+    id="driver"
+    class="toggle_input toggle_input--driver"
+    checked=""
+  />
+  <label for="driver" class="toggle_label">Driver</label>
+
+  <input
+    type="radio"
+    name="designation"
+    value="nodriver"
+    (click)="emitSelectedValue('nodriver')"
+    [(ngModel)]="designation"
+    id="nodriver"
+    class="toggle_input toggle_input--nodriver"
+  />
+  <label for="nodriver" class="toggle_label">Not A driver</label>
+
+  <span class="toggle_switch"></span>
+</div>

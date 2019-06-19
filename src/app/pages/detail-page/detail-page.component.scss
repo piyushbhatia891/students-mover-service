@@ -1,0 +1,60 @@
+@import "../../../assets/styles/base/variables.scss";
+@import "../../../assets/styles/base/colors.scss";
+:host {
+  .container {
+    background-color: $bg-color1;
+    padding: $gap-var3;
+  }
+  .page-container {
+    .page-header {
+      background-color: $bg-color2;
+      background: linear-gradient(
+          rgba(25, 21, 52, 0.88),
+          rgba(32, 49, 69, 0.78)
+        ),
+        url(../../../assets/images/mover.jpg);
+      color: $txt-color;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 100px;
+      padding: $gap-var1 $gap-var3;
+      .group-title {
+        align-items: baseline;
+        display: flex;
+        justify-content: space-between;
+        .back,
+        .title {
+          flex-grow: 1;
+          span {
+            font-size: 30px;
+          }
+        }
+      }
+      .content {
+        align-items: flex-start;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        .content-left,
+        .content-right {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .subtitle-text {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+      .floating-add-button {
+        right: $gap-var1;
+        top: $dist-top;
+      }
+    }
+
+    .header-content > div {
+      margin: $gap-var3;
+    }
+  }
+}

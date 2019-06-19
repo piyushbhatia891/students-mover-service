@@ -1,0 +1,69 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "firstname": "Natasha",
+      "lastname": "Andrade",
+      "address": {
+        "line1": "# 4830,HummingBird Way",
+        "line2": "Cambridge,MA 02142"
+      },
+      "mobile": "781-123-2345",
+      "isEditable": true,
+      "hours": 3,
+      "designation":"driver"
+    },
+    {
+      "id": 2,
+      "firstname": "Dylan",
+      "lastname": "Plante",
+      "address": {
+        "line1": "2925, Fulton Street",
+        "line2": "Parkersburg, WV 26101 "
+      },
+      "mobile": "781-123-2345",
+      "isEditable": false,
+      "hours": 3,
+      "designation":"driver"
+    },
+    {
+      "id": 3,
+      "firstname": "Scarlett",
+      "lastname": "Harris",
+      "address": {
+        "line1": "1461 Snider Street",
+        "line2": "Manassa, CO 81141"
+      },
+      "mobile": "781-123-2345",
+      "isEditable": false,
+      "hours": 3,
+      "designation":"driver"
+    },
+    {
+      "id": 4,
+      "firstname": "Sophia",
+      "lastname": "Perkins",
+      "address": {
+        "line1": "3162 Auston Secret Lane",
+        "line2": "Price, UT 84501"
+      },
+      "mobile": "781-123-2345",
+      "isEditable": false,
+      "hours": 3,
+      "designation":"driver"
+    },
+    {
+      "id": 5,
+      "firstname": "Claire",
+      "lastname": "Watts",
+      "address": {
+        "line1": "3715 Leisure Lane",
+        "line2": "San Luis Obispo, CA 93401"
+      },
+      "mobile": "781-123-2345",
+      "isEditable": false,
+      "hours": 3,
+      "designation":"driver"
+    }
+  ]
+}

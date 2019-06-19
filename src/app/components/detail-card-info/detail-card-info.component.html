@@ -1,0 +1,48 @@
+<div class="card-detail-container">
+  <div class="contact-details">
+    <div class="student-name info">
+      <div class="name">
+        <span class="contact-name info-item"
+          >{{ student.firstname }} {{ student.lastname }}</span
+        >
+      </div>
+      <div class="submit-button">
+        <button class="update-hours" (click)="saveStudentData()">
+          <span class="button-text">Done</span>
+        </button>
+      </div>
+    </div>
+    <div class="student-contact info">
+      <span class="contact-number info-item">
+        <input
+          type="text"
+          class="form-control"
+          id="mobile"
+          required
+          
+          [(ngModel)]="student.mobile"
+          name="name"
+        />
+      </span>
+    </div>
+    <div class="student-worked-hours info">
+      <div class="hours-text">
+        <span class="info-item">Hours</span>
+      </div>
+      <div class="hours-changer">
+        <i class="fa fa-plus-circle" (click)="incremented()"></i>
+        {{ student.hours }}
+        <i class="fa fa-minus-circle" (click)="decremented()"></i>
+      </div>
+    </div>
+    <div class="student-designation-change info-item">
+      <span style="display:inherit;" class="info-item">he is a driver?</span>
+      <div class="info-item">
+        <app-toggle-switch
+          [designation]="student.designation"
+          (designationChange)="designationChanged($event)"
+        ></app-toggle-switch>
+      </div>
+    </div>
+  </div>
+</div>

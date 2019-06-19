@@ -1,0 +1,14 @@
+<div class="grid-container" (click)="onClickEvent(student.id)">
+  <div class="grid-left">
+    <div>
+      {{ student.firstname }}
+    </div>
+    <div>
+      {{ student.lastname }}
+    </div>
+  </div>
+  <div class="grid-right">
+    <div class="line1">{{ student.address.line1 }}</div>
+    <div class="line2">{{ student.address.line2 }}</div>
+  </div>
+</div>

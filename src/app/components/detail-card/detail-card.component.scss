@@ -1,0 +1,30 @@
+@import "../../../assets/styles/base/variables.scss";
+@import "../../../assets/styles/base/colors.scss";
+:host {
+  .card-detail-container {
+    background-color: $txt-color;
+    box-shadow: $gap-var2 $gap-var2 $gap-var2 $gap-var2 #d8d9db;
+    border: $border solid $border-color1;
+    border-radius: $radius;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $gap-var3;
+    padding: $gap-var4;
+    .details-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+    .details-right {
+      display: flex;
+      .update-hours {
+        background: none;
+        border: $shadow-border solid $border-color2;
+        border-radius: $gap-var2;
+        .button-text {
+          padding: $gap-var4;
+        }
+      }
+    }
+  }
+}

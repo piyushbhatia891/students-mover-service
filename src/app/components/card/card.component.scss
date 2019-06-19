@@ -1,0 +1,24 @@
+@import "../../../assets/styles/base/variables.scss";
+@import "../../../assets/styles/base/colors.scss";
+@import "../../../assets/styles/base/commons.scss";
+
+:host {
+  border: $border solid $border-color1;
+  border-radius: $radius;
+  background-color: $txt-color;
+  display: block;
+  margin-bottom: $gap-var3;
+  padding: $gap-var3;
+  .grid-container {
+    @extend .flex-row;
+    .grid-left {
+      border-right: $border solid $txt-color2;
+      width: 30%;      
+      @extend .grid-common-class;
+    }
+    .grid-right {
+      align-items: flex-end;
+      @extend .grid-common-class;      
+    }
+  }
+}
