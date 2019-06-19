@@ -36,7 +36,8 @@ export class DetailPageComponent implements OnInit {
         this.getFilteredStudentsList();
       });
   }
-
+  
+//filtering the student list on the basis incoming student id 
   private getFilteredStudentsList() {
     this.studentsList.filter((studentItem: StudentsDetails) => {
       if (studentItem.id === this.studentId) {
@@ -50,7 +51,7 @@ export class DetailPageComponent implements OnInit {
   navigateBack() {
     this.router.navigate(["home"]);
   }
-
+//function for opening and editable fields for student
   navigateToDetail(id: number) {
     this.studentsList = this.service.updateEditableOptionForStudent(id);
     this.studentId = id;
