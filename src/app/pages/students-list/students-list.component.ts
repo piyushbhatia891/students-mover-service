@@ -14,10 +14,7 @@ export class StudentsListComponent implements OnInit, OnDestroy {
   title = "students-design";
   students: StudentsDetails[] = [];
   subscription: Subscription;
-  constructor(
-    private router: Router,
-    private service: StudentsApiService
-  ) {}
+  constructor(private router: Router, private service: StudentsApiService) {}
 
   ngOnInit() {
     this.subscription = this.service.StudentsState.subscribe(
@@ -30,8 +27,10 @@ export class StudentsListComponent implements OnInit, OnDestroy {
   ngOnDestroy() {
     this.subscription.unsubscribe();
   }
+
   cardClicked(studentId: number) {
     this.service.updateEditableOptionForStudent(studentId);
+    //navigating on detail info page
     this.router.navigate(["details", studentId]);
   }
 }
