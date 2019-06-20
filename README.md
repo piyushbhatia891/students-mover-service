@@ -11,5 +11,5 @@ This guide explains you how to start and run the project.
 4.open the application at http://localhost:4200 or at which ever port you are opening.
 
 
-Screenshots can be found in  src/app/assets/screenshots folder for pages required
+Screenshots can be found in  src/app/assets folder for pages required
 
