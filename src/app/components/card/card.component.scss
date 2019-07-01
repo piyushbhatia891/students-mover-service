@@ -10,15 +10,31 @@
   margin-bottom: $gap-var3;
   padding: $gap-var3;
   .grid-container {
-    @extend .flex-row;
+    display: flex;
+    width: 90%;
     .grid-left {
-      border-right: $border solid $txt-color2;
-      width: 30%;      
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      color: $txt-color-job-list;
+      border-right: $border-list-separation;
+      width: 30%;
+      margin-left: 10px;
       @extend .grid-common-class;
     }
     .grid-right {
       align-items: flex-end;
-      @extend .grid-common-class;      
+      font-family: "Karla";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      color: $txt-color-job-address;
+      margin-left: 40px;
+      @extend .grid-common-class;
+      .location-icon {
+        text-align: center;
+      }
     }
   }
 }

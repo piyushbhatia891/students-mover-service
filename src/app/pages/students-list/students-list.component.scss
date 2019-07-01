@@ -1,6 +1,8 @@
 @import "../../../assets/styles/base/variables.scss";
 @import "../../../assets/styles/base/colors.scss";
+@import "../../../assets/styles/base/commons.scss";
 :host {
+  font-family: "Poppins";
   .container {
     background-color: $bg-color1;
     padding: $gap-var3;
@@ -8,24 +10,20 @@
   .page-container {
     .page-header {
       align-items: center;
-      background: linear-gradient(
-          rgba(25, 21, 52, 0.88),
-          rgba(32, 49, 69, 0.78)
-        ),
-        url(../../../assets/images/mover.jpg);
+      background: url(../../../assets/images/Group3.png);
       color: $txt-color;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
       .header-bar {
-        align-items: baseline;
+        align-items: center;
         display: flex;
-
+        width: 90%;
         .group-title {
           align-items: center;
           display: flex;
           flex-direction: column;
-
+          flex: 1;
           margin: 20px;
         }
       }
@@ -33,15 +31,19 @@
       .content {
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 90%;
         .search-bar {
           background-color: white;
           display: inline-flex;
           border: 1px solid #ccc;
-          border-radius: $gap-var2;
-
+          border-radius: $gap-var6;
+          font-family: Karla;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          color: $txt-color-search-bar;
           .searchIcon {
-            color: $txt-color2;
+            color: $txt-color-search-lens;
             padding: 0.5rem;
           }
           .searchBox {

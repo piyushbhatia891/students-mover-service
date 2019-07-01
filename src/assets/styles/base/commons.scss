@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(../../../assets/fonts/poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "Karla";
+  src: url(../../../assets/fonts/karla/Karla-Regular.ttf);
+}
 .row {
   display: flex;
   justify-content: space-between;
