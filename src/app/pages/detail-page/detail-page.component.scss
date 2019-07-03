@@ -1,18 +1,21 @@
 @import "../../../assets/styles/base/variables.scss";
 @import "../../../assets/styles/base/colors.scss";
 :host {
+  font-family: "Poppins";
   .container {
     background-color: $bg-color1;
     padding: $gap-var3;
   }
   .page-container {
     .page-header {
-      background-color: $bg-color2;
+      background: url(../../../assets/images/Group3.png);
+      /*
       background: linear-gradient(
           rgba(25, 21, 52, 0.88),
           rgba(32, 49, 69, 0.78)
         ),
         url(../../../assets/images/mover.jpg);
+        */
       color: $txt-color;
       display: flex;
       flex-direction: column;
@@ -27,7 +30,7 @@
         .title {
           flex-grow: 1;
           span {
-            font-size: 30px;
+            font-size: 18px;
           }
         }
       }
@@ -36,6 +39,13 @@
         display: flex;
         justify-content: space-evenly;
         width: 100%;
+        .content-left{
+          color: #C4C4C4;
+          font-size: 18px;
+        }
+        .content-right{
+          font-size: 14px;
+        }
         .content-left,
         .content-right {
           display: flex;
@@ -56,5 +66,13 @@
     .header-content > div {
       margin: $gap-var3;
     }
+  }
+  ::ng-deep{
+    ngx-float-button{
+      .fab-toggle{
+        background-color: #FBA932 !important;
+      }
+    }
+           
   }
 }

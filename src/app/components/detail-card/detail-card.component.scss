@@ -14,13 +14,16 @@
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
+      .student-contact{
+        color: #777777;
+      }
     }
     .details-right {
       display: flex;
       .update-hours {
         background: none;
-        border: $shadow-border solid $border-color2;
-        border-radius: $gap-var2;
+        border: $shadow-border solid #61CE70;
+        border-radius: $gap-var6;
         .button-text {
           padding: $gap-var4;
         }

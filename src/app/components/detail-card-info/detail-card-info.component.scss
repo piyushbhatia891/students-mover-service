@@ -13,15 +13,20 @@
     .contact-details {
       .contact-number input {
         border: 0;
+        font-family: 'Karla';
+        font-size: 14px;
+        color: #777777;
       }
       .student-name {
         @extend .row;
         align-items: baseline;
         display: flex;
-
+        font-size: 18px;
+        color: #3D3D3D;
         .update-hours {
-          background: $bg-color2;
-          border: $shadow-border solid $bg-color2;
+          font-family:'Karla';
+          background: #369BF9;
+          border: $shadow-border solid #369BF9;
           border-radius: $gap-var4;
           padding: $gap-var2;
           .button-text {
@@ -32,13 +37,26 @@
       }
       .student-worked-hours {
         @extend .row;
+        .hours-text{
+          font-size: 18px;
+          color: #C4C4C4;
+          font-family: 'Poppins';
+        }        
+      }
+      .student-designation-change{
+        span.info-item{
+          font-family: 'Roboto';
+          font-size: 12px;
+          color: #777777;
+          text-transform: capitalize;
+        }
       }
       .info {
-        border-bottom: $border solid $border-color;
+        border-bottom: $border solid #e9e9e9;
         padding: $gap-var3;
       }
       .info-item {
-        padding: $gap-var2;
+        padding: $gap-var3;
       }
     }
     .details-right {

@@ -9,9 +9,9 @@
   display: block;
   margin-bottom: $gap-var3;
   padding: $gap-var3;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
   .grid-container {
     display: flex;
-    width: 90%;
     .grid-left {
       font-family: "Poppins";
       font-style: normal;
